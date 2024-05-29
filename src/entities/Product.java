@@ -6,11 +6,11 @@ public class Product {
     private String category;
     private Double price;
 
-    public Product(Double price, String category, String name, Long id) {
-        this.price = price;
-        this.category = category;
-        this.name = name;
+    public Product(Long id, String name, String category, Double price) {
         this.id = id;
+        this.name = name;
+        this.category = category;
+        this.price = price;
     }
 
     public Long getId() {
