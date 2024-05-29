@@ -30,9 +30,6 @@ public class Main_3 {
 
         List<Product> filtraProdottiBoys = products.stream()
                 .filter(product -> "Boys".equals(product.getCategory())).toList();
-        filtraProdottiBoys.forEach(product -> System.out.println(product.getPrice() + "€" + " questo è senza sconto"));
-
-
         filtraProdottiBoys.forEach(product -> product.setPrice(product.getPrice() * 0.90));
 
         System.out.println("\n\tProdotti che appartengono alla categoria Boys con lo sconto del 10% già applicato:  ");
