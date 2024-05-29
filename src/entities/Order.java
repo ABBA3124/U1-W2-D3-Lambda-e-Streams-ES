@@ -3,6 +3,7 @@ package entities;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Random;
 
 public class Order {
     private Long id;
@@ -12,13 +13,19 @@ public class Order {
     private List<Product> products;
     private Customer customer;
 
-    public Order(Long id, String status, LocalDate orderDate, LocalDate deliveryDate, List<Product> products, Customer customer) {
-        this.id = id;
+    public Order(String status, LocalDate orderDate, LocalDate deliveryDate, List<Product> products) {
+        this.id = idRandom();
         this.status = status;
         this.orderDate = orderDate;
         this.deliveryDate = deliveryDate;
         this.products = products;
         this.customer = customer;
+    }
+
+
+    private Long idRandom() {
+        Random random = new Random();
+        return random.nextLong(0, 10000);
     }
 
     public Long getId() {
