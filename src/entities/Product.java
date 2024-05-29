@@ -1,0 +1,47 @@
+package entities;
+
+public class Product {
+    private Long id;
+    private String name;
+    private String category;
+    private Double price;
+
+    public Product(Double price, String category, String name, Long id) {
+        this.price = price;
+        this.category = category;
+        this.name = name;
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+}
