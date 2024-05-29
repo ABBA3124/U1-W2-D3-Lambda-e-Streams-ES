@@ -1,16 +1,23 @@
 package entities;
 
+import java.util.Random;
+
 public class Product {
     private Long id;
     private String name;
     private String category;
     private Double price;
 
-    public Product(Long id, String name, String category, Double price) {
-        this.id = id;
+    public Product(String name, String category, Double price) {
+        this.id = idRandom();
         this.name = name;
         this.category = category;
         this.price = price;
+    }
+
+    private Long idRandom() {
+        Random random = new Random();
+        return random.nextLong(0, 5000);
     }
 
     public Long getId() {
