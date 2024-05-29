@@ -13,9 +13,9 @@ public class Main_1 {
         List<Product> products = Arrays.asList(
                 new Product("libro1", "Books", 119.99),
                 new Product("libro2", "Books", 129.99),
-                new Product("Laptop", "Electronics", 145.99),
+                new Product("lenovo legion go", "Electronics", 799.99),
                 new Product("libro3", "Books", 59.99),
-                new Product("Phone", "Electronics", 139.99),
+                new Product("phone 15 pro max", "Electronics", 1049.99),
                 new Product("libro4", "Books", 32.99)
         );
         List<Product> filtraProdotti = products.stream()

@@ -16,7 +16,7 @@ public class Customer {
 
     private Long idRandom() {
         Random random = new Random();
-        return random.nextLong(0, 10000);
+        return random.nextLong(1000, 9999);
     }
 
     public Long getId() {

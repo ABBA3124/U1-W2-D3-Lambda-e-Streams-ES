@@ -11,22 +11,22 @@ public class Main_2 {
     public static void main(String[] args) {
 
 
-        //lista prodotti mista che come categoria abbiano anche Baby
+        //lista prodotti mista che contiene alcuni prodotti che hanno categoria Baby
         List<Product> products = Arrays.asList(
                 new Product("libro1", "Books", 119.99),
                 new Product("libro2", "Books", 129.99),
                 new Product("prodottoBambini4", "Baby", 59.99),
                 new Product("prodottoBambini1", "Baby", 19.99),
-                new Product("Laptop", "Electronics", 145.99),
+                new Product("lenovo legion go", "Electronics", 799.99),
                 new Product("libro3", "Books", 59.99),
                 new Product("prodottoBambini2", "Baby", 9.99),
                 new Product("prodottoBambini3", "Baby", 5.99),
-                new Product("Phone", "Electronics", 139.99),
+                new Product("Phone 15 pro max", "Electronics", 1049.99),
                 new Product("libro4", "Books", 32.99)
 
         );
 
-        // Lista di ordini
+        //lista di ordini
         List<Order> orders = Arrays.asList(
                 new Order("Consegnato", LocalDate.now().minusDays(10), LocalDate.now().minusDays(5),
                         Arrays.asList(products.get(0), products.get(1))),
