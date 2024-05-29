@@ -47,8 +47,8 @@ public class Main_2 {
         List<Order> filteredOrders = orders.stream()
                 .filter(order -> order.getProducts().stream()
                         .anyMatch(product -> "Baby".equals(product.getCategory()))).toList();
-
-        filteredOrders.forEach(order -> System.out.println("\tID ordine: " + order.getId() + " - " + "Stato: " + order.getStatus() + " - " + "Ordinato il: " + order.getOrderDate() + " - " + "Data di consegna: " + order.getDeliveryDate() + " - " + "Prodotto: " + order.getProducts()));
+        System.out.println("\n----Lista di tutti gli ordini che contengono prodotti che contengono la categoria Baby: ----");
+        filteredOrders.forEach(order -> System.out.println("\t\n-- ID ordine: " + order.getId() + " - " + "Stato: " + order.getStatus() + " - " + "Ordinato il: " + order.getOrderDate() + " - " + "Data di consegna: " + order.getDeliveryDate() + " \n\t- " + "Prodotti ordinato/i: " + order.getProducts()));
 
     }
 }
